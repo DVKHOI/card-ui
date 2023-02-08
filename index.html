@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card UI</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <input type="radio" name="addCard" id="closeCard" value="0" checked />
+      <input type="radio" name="addCard" id="openCard" value="1" />
+      <input type="radio" name="addCard" id="addCard" value="2" />
+      <div class="basicInfo">
+        <div class="title">
+          <div class="category">Nike</div>
+          <div class="name">Nike Insta</div>
+          <div class="info">New product 2023</div>
+        </div>
+        <div class="img">
+          <div class="item">
+            <input type="radio" name="color" id="green" checked />
+            <img src="./img/green.png" alt="green" />
+          </div>
+          <div class="item">
+            <input type="radio" name="color" id="black" checked />
+            <img src="./img/black.png" alt="green" />
+          </div>
+        </div>
+        <div class="colors">
+          <label for="green">
+            <div class="ellipse" style="background-color: #c5dc6a"></div>
+          </label>
+          <label for="black">
+            <div class="ellipse" style="background-color: #413e38"></div>
+          </label>
+        </div>
+        <div class="sizes">
+          <label for="closeCard">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <label>
+            <input type="radio" name="size" checked />
+            39
+          </label>
+          <label>
+            <input type="radio" name="size" />
+            40
+          </label>
+          <label>
+            <input type="radio" name="size" />
+            41
+          </label>
+          <label for="addCard">
+            <i class="fa-solid fa-check"></i>
+          </label>
+        </div>
+      </div>
+      <div class="mores">
+        <div class="price">$99.99</div>
+        <div class="star">
+          <i class="fa-solid fa-star text-yellow"></i>
+          <i class="fa-solid fa-star text-yellow"></i>
+          <i class="fa-solid fa-star text-yellow"></i>
+          <i class="fa-solid fa-star text-yellow"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+      <div class="addCard">
+        <label for="openCard">
+          <i class="fa-solid fa-cart-arrow-down"></i>
+        </label>
+        <div class="box"></div>
+      </div>
+    </div>
+  </body>
+</html>
